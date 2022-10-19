@@ -15,6 +15,7 @@ contract Whitelist{
         require( numWhiteListedAddresses < maxWhiteListedAddresses, "too late ngmi" );
         whitelistedAddresses[msg.sender] = true;
         numWhiteListedAddresses++;
+        
 
     }
 
