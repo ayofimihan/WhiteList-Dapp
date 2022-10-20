@@ -21,4 +21,35 @@ contract Whitelist{
 
 
 
+
+}
+
+// contract owo {
+//     function mirror() public payable {
+
+//         uint amount = msg.value;
+//         address payable target = payable(msg.sender);
+//         (bool success,) = target.call{value: amount}("");
+//         require(success, "brokei!");
+
+
+//     }
+
+// }
+
+contract blacklist{
+    uint8 maxBlackListedAcoounts;
+    uint8 numBlackListedAccounts;
+    mapping (address => bool) public blackListedAcoounts;
+
+    constructor (uint8 _maxBlackListedAcoounts){
+        numBlackListedAccounts = _maxBlackListedAcoounts;
+
+    }
+
+    function tryAddAccount() public {
+        require(!blackListedAccounts[]);
+
+    }
+
 }
