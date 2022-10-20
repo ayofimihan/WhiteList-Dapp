@@ -37,19 +37,22 @@ contract Whitelist{
 
 // }
 
-contract blacklist{
-    uint8 maxBlackListedAcoounts;
-    uint8 numBlackListedAccounts;
-    mapping (address => bool) public blackListedAcoounts;
+// contract blacklist{
+//     uint8 maxBlackListedAcoounts;
+//     uint8 numBlackListedAccounts;
+//     mapping (address => bool) public blackListedAcoounts;
 
-    constructor (uint8 _maxBlackListedAcoounts){
-        numBlackListedAccounts = _maxBlackListedAcoounts;
+//     constructor (uint8 _maxBlackListedAcoounts){
+//         numBlackListedAccounts = _maxBlackListedAcoounts;
 
-    }
+//     }
 
-    function tryAddAccount() public {
-        require(!blackListedAccounts[]);
+//     function tryAddAccount() public {
+//         require(!blackListedAccounts[msg.sender], "you're already blacklisted son");
+//         require(numBlackListedAccounts<10, "too lack fam");
+//         blackListedAccounts[msg.sender] = true;
+//         numBlackListedAccounts++
 
-    }
+//     }
 
 }
