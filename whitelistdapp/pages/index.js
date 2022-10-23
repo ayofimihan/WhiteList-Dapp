@@ -8,7 +8,7 @@ import { abi, CONTRACT_ADDRESS } from "../konstants";
 export default function Home() {
   const [numWhiteListedAddresses, setNumWhiteListedAddresses] = useState(0);
   const [walletConnected, setWalletConnected] = useState(false);
-  const [_joinedWhitelist, setJoinedWhitelist] = useState()
+  const [_joinedWhitelist, setJoinedWhitelist] = useState();
   const web3ModalRef = useRef();
 
   const getProviderOrSigner = async (needSigner = false) => {
