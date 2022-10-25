@@ -1,4 +1,4 @@
-export const CONTRACT_ADDRESS = "0x5684c785bc826005e8f0f97d3a1bf4f50dbc1b4a";
+export const CONTRACT_ADDRESS = "0x03b007819b0768597508D47494C2270d8c37Da6b";
 export const abi = [
     {
       "inputs": [
@@ -16,6 +16,32 @@ export const abi = [
       "name": "addAddressToWhitelist",
       "outputs": [],
       "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "maxWhiteListedAddresses",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "numWhiteListedAddresses",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
       "type": "function"
     },
     {
@@ -37,4 +63,4 @@ export const abi = [
       "stateMutability": "view",
       "type": "function"
     }
-  ];
+  ]
