@@ -130,7 +130,7 @@ export default function Home() {
         <h1 className={styles.title}> California Jacuzzi</h1>
 
         <div className={styles.description}>
-          {numOfWhiteListedAddresses} fuckersm have been whitelisted.
+          {numOfWhiteListedAddresses} fuckers have been whitelisted.
         </div>
         <div>{button()}</div>
         <div>
